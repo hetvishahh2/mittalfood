@@ -1,0 +1,487 @@
+/* Home.css */
+body {
+  overflow-x: hidden;
+}
+
+.home-section{
+  background-color: #555;
+}
+.hii {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust the padding as needed */
+  background-color: #555;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.left-part {
+  flex: 1; /* Takes 50% of the space */
+  background-color: #555;
+}
+
+.right-part {
+  flex: 1; /* Takes 50% of the space */
+  color: white; /* Text color */
+  padding: 20px; /* Adjust the padding as needed */
+  text-align: right;
+  background-color: #555;
+}
+
+.right-part h2 {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #555;
+  color:#25d366
+}
+.right-part h3 {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  font-size: 30px;
+  font-family:"Century Gothic";
+  background-color: #555;
+  font-weight: 100;
+}
+.image-container img {
+  width: 100%; /* Make the image fill its container */
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .hii {
+    flex-direction: column; 
+    margin: 0 25px;
+  }
+
+  .left-part,
+  .right-part {
+    width: 100%; /* Take full width on smaller screens */
+    text-align: left;
+    
+  }
+}
+
+
+.section-divider {
+  height: 2px;
+  background-color: #ddd; /* Divider color */
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+
+
+/* about.css */
+
+.about-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px;
+  /* margin: 0 40px; */
+}
+
+.about-content h2 {
+  color: #555;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.about-content h4 {
+  color: #555;
+  line-height: 1.6;
+  font-family:"Century Gothic";
+  font-size: 25px;
+}
+
+/* product section */
+
+
+.products-section {
+  background-color: #555;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* padding: 40px; */
+  flex-wrap: wrap; /* Allow products to wrap to the next line on smaller screens */
+}
+
+.products-section h2{
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  padding-top: 30px;
+
+}
+.products-section h2:hover{
+  text-decoration: underline;
+}
+
+.products-section h3{
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  /* font-weight: 200; */
+  font-family:"Century Gothic";
+
+}
+.product-box {
+  width: 48%; /* Adjust the width of each product box */
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-box img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #666;
+}
+
+.product-details {
+  padding: 15px;
+  color: #555;
+}
+
+.product-details h3 {
+  /* margin-bottom: 10px; */
+  font-size: 40px;
+  text-align: center;
+}
+
+.product-details p {
+  /* margin-bottom: 5px; */
+  font-size: 17px;
+  text-align: center;
+  font-family:"Century Gothic";
+}
+
+/* Home.css */
+
+/* Product Popup */
+.product-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.product-popup.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ccc;
+}
+
+/* View Details Button */
+.product-details button {
+  background-color: #da2727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family:"Century Gothic";
+  font-size: 1.2rem;
+}
+
+.product-details button:hover {
+  background-color: #ba6460;
+}
+/* Add this CSS to your existing styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-box {
+    width: 100%; /* Display each product box at full width on smaller screens */
+  }
+}
+
+/* Values section */
+
+.highlight {
+  color: #da2727;
+  font-weight: bold;
+}
+
+.values-section {
+  background-color: #fff; /* White background */
+  color: #555; /* Text color */
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  flex-wrap: wrap;
+  font-family:"Century Gothic";
+  font-size: 25px;
+}
+.values-container h2{
+  text-align: center;
+  color: #555;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.values-container h2:hover{
+  text-decoration: underline;
+}
+
+.value-box {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #555;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .value-box {
+    width: 100%;
+  }
+}
+
+/* contact */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 40px;
+  background-color: #555;
+  margin: 0 auto;
+  max-width: 1400px;
+  
+}
+#contact{
+  background-color: #555;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+  color: #f3eeee;
+  
+  
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f3eeee;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.contact-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #f3eeee;
+  font-family:"Century Gothic";
+  font-weight: 400;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #25d366; /* WhatsApp green color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family:"Century Gothic";
+}
+
+.home-section,
+.about-section,
+.products-section,
+.values-section,
+.contact-section {
+  margin-bottom: 40px; /* Adjust the margin as needed */
+}
+
+
+/* contact form */
+.contact-us {
+  background-color: #000;
+  display: flex;
+  flex-direction: row; /* Change the flex direction to column */
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding for better mobile view */
+  color: #ddd;
+  font-family:"Century Gothic";
+}
+
+.contact-info,
+.contact-form {
+  max-width: 100%; /* Set max-width to 100% for better responsiveness */
+  color: #ddd;
+
+}
+
+.contact-info {
+  margin-bottom: 20px; /* Add margin at the bottom for better separation */
+  
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-family:"Century Gothic";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family:"Century Gothic";
+  font-size: 25px;
+}
+
+input,
+textarea {
+  width: 70%;
+  padding: 10px; /* Smaller padding for a more compact look */
+  margin-bottom: 15px; /* Adjust margin as needed */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border for better visibility */
+}
+
+.contact-form button {
+  background-color: #da2727;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-family:"Century Gothic";
+  font-size: 1.2rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.5); 
+  /* margin-right: 10px;  */
+}
+
+p {
+  font-size: 24px;
+}
+
+.radio-container {
+  margin-bottom: 10px;
+  width: 65%;
+}
+
+.organization-types {
+  display: flex;
+}
+
+.organization-type-item {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.organization-type-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .radio-container {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .organization-types {
+    display: block; /* Stack items vertically */
+  }
+
+  .organization-type-item {
+
+    margin-bottom: 10px; 
+  }
+  input,textarea {
+    width: 100%;
+  } 
+}
+
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    flex-direction: column; /* Change back to column layout for screens narrower than 768px */
+    align-items: center; /* Center elements vertically */
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%; /* Set max-width to 100% for better responsiveness */
+  }
+}
+
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc; /* Adjust the color as needed */
+  margin: 20px 20px; /* Adjust the margin as needed */
+}
+
+
+

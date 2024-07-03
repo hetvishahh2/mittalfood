@@ -1,0 +1,170 @@
+.navbar {
+    background-color: #f8f4f4;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+  }
+
+.logo {
+    height: 50px; /* Adjust the height based on your design */
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  .nav-icon1{
+    background-color: white;
+    width:30px;
+    height: 30px;
+    position: absolute;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+    position: relative;
+  }
+  
+  .nav-logo {
+    color: #f5b921;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .nav-logo .icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 16px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+  }
+  
+  .nav-links {
+    color: #555;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid transparent;
+    margin-left: 3rem;
+    margin-top: 30px;
+    font-family:"Century Gothic";
+    font-size: 20px;
+  }
+  .nav-links-logo{
+    color: #fa0404;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid transparent;
+    margin-left: 3rem;
+    margin-top: 30px;
+    font-family:"Century Gothic";
+    font-size: 60px;
+    font-weight: bold;
+    
+  }
+  @media screen and (max-width: 768px) {
+    .nav-links-logo{
+        font-size: 35px;
+    }
+  }
+  
+  
+  .nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  .nav-item:hover{
+    text-decoration: underline;
+    color: #25d366;
+  }
+  
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+  }
+ 
+  
+  .nav-icon {
+    display: none;
+    color: #555;
+    background-color: #fff;
+  }
+  
+  .nav-icon .icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #ffffff;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .nav-item .active {
+      color: #ffdd40;
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-logo .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-100%, -50%);
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      color: #555;
+    }
+  }

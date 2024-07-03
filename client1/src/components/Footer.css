@@ -1,0 +1,112 @@
+/* Footer.css */
+
+.footer {
+  background-color: #fffefe;
+  color: #555;
+  display: flex;
+  flex-direction: column; /* Change to column layout for mobile */
+  align-items: center; /* Center content for mobile */
+  padding: 0px 50px;
+}
+
+.hiih3{
+  margin-left: 20px;
+}
+.column1,
+.column2 {
+  flex: 1;
+  max-width: 100%; /* Set max-width to 100% for better responsiveness */
+  text-align: center; /* Center content for mobile */
+}
+
+.column1 h2 {
+  font-size: 3.8rem;
+  margin-bottom: 15px;
+}
+
+.column1 button {
+  background-color: #555;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social-icons button {
+  background-color: #555;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.column1{
+  margin-bottom: 60px;
+}
+.column2 {
+  margin-top: 65px; /* Adjust margin for better separation on mobile */
+  order: 2;
+}
+
+.logo-container img {
+  max-width: 160px;
+  height: 100px;
+  margin-bottom: 10px; /* Adjust margin for better separation on mobile */
+  border-radius: 5px;
+}
+
+.address p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.customer-support {
+  text-align: right; /* Center content for mobile */
+}
+
+.customer-support p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.customer-support span {
+  color: #e4e6e9;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* Apply styles for screens wider than 768px */
+  .social-icons {
+    align-items: center;
+  }
+  .footer {
+    flex-direction: row; /* Change back to row layout */
+    align-items: flex-start; /* Align items to the start for desktop */
+  }
+  .column1 {
+    text-align: left; /* Align text to the left for desktop */
+  }
+  .column2 {
+    order: 1; /* Set the order to 1 to keep it on the left */
+    text-align: right; /* Align text to the right for desktop */
+  }
+}
+@media screen and (max-width: 767px) {
+  
+  .footer {
+    align-items: flex-start;
+  }
+  .column1,
+  .column2 {
+    text-align: left; 
+  }
+  
+}
