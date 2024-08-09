@@ -322,7 +322,7 @@ const Home = () => {
             
           </>
         }
-        imageUrl="/images/springD.jpeg"
+        imageUrl="/images/SpringD.jpeg"
       />
       <div className="section-divider"></div>
     {/* values page */}
