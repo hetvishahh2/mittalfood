@@ -239,7 +239,7 @@ const Home = () => {
         <div className="about-content" data-aos="fade-right">
         {/* data-aos="fade-up" */}
           {/* <h2>Mittal Food</h2> */}
-          <h4>
+          <h4 style={{ fontWeight: 'normal' }}>
           Mittal Food stands as a preeminent manufacturing powerhouse specializing 
           in the production of premium-quality dough sheets in India. 
           Our corporate headquarters is located in the vibrant city of Vapi,
@@ -269,7 +269,7 @@ const Home = () => {
         <br/>
         <br/>
         <h2 data-aos="fade-down">OUR PRODUCTS</h2>
-        <h3>We offer a diverse range of varieties and sizes of samosa and spring roll dough sheets.</h3>
+        <h3 style={{ fontWeight: 'normal' }}>We offer a diverse range of varieties and sizes of samosa and spring roll dough sheets.</h3>
         <div className="product-container" data-aos="fade-up">
           {products.map((product) => (
             <div key={product.id} className="product-box">
