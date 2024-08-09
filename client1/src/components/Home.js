@@ -106,6 +106,37 @@ const Home = () => {
           .catch((error) => {
             console.error('Error (Mittalfood):', error);
           });
+      // www domain
+
+      fetch('https://www.mittalfood.com/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log('Success (Mittalfood):', data);           
+          })
+          .catch((error) => {
+            console.error('Error (Mittalfood):', error);
+          });
+          
+          fetch('http://www.mittalfood.com/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log('Success (Mittalfood):', data);           
+          })
+          .catch((error) => {
+            console.error('Error (Mittalfood):', error);
+          });
   
       setFormData({
         name: '',
